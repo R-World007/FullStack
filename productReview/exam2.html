@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Exam 2</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .parentReviewForm {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .reviewChild {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      input,
+      textarea {
+        width: 40%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      #submit-review {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #reviews {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Product Review</h1>
+    <img src="product.jpg" alt="Product" width="500" height="400" />
+    <div class="parentReviewForm">
+      <div class="reviewChild">
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div class="reviewChild">
+        <textarea
+          id="details"
+          placeholder="Write your review here..."
+          required
+        ></textarea>
+      </div>
+      <div class="reviewChild">
+        <input
+          type="number"
+          id="rating"
+          placeholder="Rating (1-5)"
+          min="1"
+          max="5"
+          required
+        />
+      </div>
+    </div>
+    <button id="submit-review">Add Review</button>
+
+    <div id="reviews">
+      <h2>Reviews (<span id="review-count">0</span>)</h2>
+    </div>
+    <script type="text/javascript" src="exam2.js"></script>
+  </body>
+</html>
